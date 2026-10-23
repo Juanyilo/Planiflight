@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+.body{
+    min-height: 100vh;
+    background-color: #dff0f0;
+    color: #262626;
+}
+
+
+/*header*/
+.header{
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    padding: 24px 8%;
+}
+.logo{
+    justify-self: start;
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+.link-inicio{
+    grid-column: 3;
+    grid-row: 1;
+    justify-self: end;
+}
+.icono-inicio{
+    width: 40px;
+    height: auto;
+}
+.titulo{
+    grid-column: 2;
+    grid-row: 1;
+    justify-self: center;
+    color: #276368;
+}
+
+
+/*destino*/
+.seccion-destino{
+    padding: 12px 2%;
+}
+.detalle-destino{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    align-items: start;
+    gap: 16px;
+}
+.foto-destino{
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+.datos-destino{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    min-width: 0;
+}
+.titulo-destino{
+    color: #262626;
+    font-size: clamp(30px, 6vw, 38px);
+}
+.descripcion-destino{
+    font-size: 25px;
+    line-height: 1.35;
+}
+.input-favorito{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    clip-path: inset(50%);
+}
+.boton-favorito{
+    position: relative;
+    display: block;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.img-corazon{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.2s ease;
+}
+.corazon-lleno{
+    opacity: 0;
+}
+.input-favorito:checked + .boton-favorito .corazon-vacio{
+    opacity: 0;
+}
+.input-favorito:checked + .boton-favorito .corazon-lleno{
+    opacity: 1;
+}
+.input-favorito:focus-visible + .boton-favorito{
+    outline: 2px solid #276368;
+    outline-offset: 3px;
+}
+
+.titulo-clima{
+    margin: 14px 4% 12px;
+    color: #276368;
+    font-size: 16px;
+}
+.widget-clima{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.acciones-destino{
+    display: flex;
+    justify-content: center;
+    gap: clamp(24px, 14vw, 100px);
+    padding: 24px 0;
+}
+.boton-accion{
+    border: 1px solid #555;
+    border-radius: 3px;
+    padding: 3px 8px;
+    background-color: #276368;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}

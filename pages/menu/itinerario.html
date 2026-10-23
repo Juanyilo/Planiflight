@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itinerario</title>
+    <link rel="stylesheet" href="/Styles/estilos menu/itinerario.css">
+</head>
+<body class="body">
+    <header class="header">
+         <img src="/images/icons/LogoNN.png" alt="LOGO" class="logo">
+        <h1 class="titulo">PLANIFLIGHT</h1>
+        <a href="/index.html" class="link-inicio">
+            <img src="/images/icons/Home.png" alt="Home" class="icono-inicio">
+        </a>
+    </header>
+    <section class="itinerario">
+        <h2 class="titulo-itinerario">Mi Itinerario</h2>
+        <div class="tarjeta-itinerario">
+            <div class="resumen-destino">
+                <a href="/pages/Destinos/Miami.html" class="enlace-destino">
+                    <img src="/images/destinos/Internacionales/Miami.avif" alt="Miami" class="imagen-destino">
+                </a>
+                <div class="datos-destino">
+                    <h3 class="nombre-destino">Miami, Estados Unidos</h3>
+                    <input type="date" class="fecha-destino" aria-label="Fecha del viaje">
+                </div>
+            </div>
+            <div class="dia-itinerario">
+                <div class="actividad-itinerario">
+                    <h3 class="nombre-dia">Día 1</h3>
+                    <p class="descripcion-actividad">Ir a la playa</p>
+                    <button class="enlace-eliminar" type="button">Eliminar</button>
+                </div>
+                <button class="boton-accion boton-agregar-actividad" type="button">Agregar actividad +</button>
+                <button class="boton-accion boton-borrar-dia" type="button">Borrar día</button>
+            </div>
+            <button class="boton-accion boton-agregar-dia" type="button">Agregar día +</button>
+            <button class="enlace-eliminar eliminar-itinerario" type="button">Eliminar del itinerario</button>
+        </div>
+    </section>
+    
+</body>
+</html>

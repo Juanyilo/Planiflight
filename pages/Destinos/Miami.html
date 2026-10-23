@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miami</title>
+    <link rel="stylesheet" href="/Styles/estilos destinos/Miami.css">
+</head>
+<body class="body">
+    <header class="header">
+         <img src="/images/icons/LogoNN.png" alt="LOGO" class="logo">
+        <h1 class="titulo">PLANIFLIGHT</h1>
+        <a href="/index.html" class="link-inicio">
+            <img src="/images/icons/Home.png" alt="Home" class="icono-inicio">
+        </a>
+    </header>
+    <section class="seccion-destino">
+        <article class="detalle-destino">
+            <img class="foto-destino" src="/images/destinos/Internacionales/Miami.avif" alt="Miami">
+            <article class="datos-destino">
+                <h2 class="titulo-destino">Miami, Florida, Estados Unidos</h2>
+                <p class="descripcion-destino">Miami es una ciudad de la Florida, conocida por sus playas, 
+                    su vida noturna y su diversidad cultural. Es un destino popular 
+                    para turistas que buscan relajarse en el sol, disfrutar de la 
+                    gastronomía local y explorar la cultura caribeña.
+                </p>
+                <input type="checkbox" id="corazon-check" class="input-favorito">
+                
+                <label for="corazon-check" class="boton-favorito">
+                    <img src="/images/icons/Nfavs.png" alt="Favorito" class="img-corazon corazon-vacio">
+                    
+                    <img src="/images/icons/favs.png" alt="Favorito Activo" class="img-corazon corazon-lleno">
+                </label>
+            </article>
+        </article>
+        <h2 class="titulo-clima">Información climatica de la zona:</h2>
+        <div class="widget-clima" id="ww_2b82354b582ed" v='1.3' loc='id' a='{"t":"horizontal","lang":"es","sl_lpl":1,"ids":
+        ["wl4471"],"font":"Arial","sl_ics":"one_a","sl_sot":"celsius","cl_bkg":"image","cl_font":
+        "#FFFFFF","cl_cloud":"#FFFFFF","cl_persp":"#81D4FA","cl_sun":"#FFC107","cl_moon":"#FFC107",
+        "cl_thund":"#FF5722"}'>Más previsiones: 
+        <a href="https://oneweather.org/new_york_city/30_days/" id="ww_2b82354b582ed_u" 
+        target="_blank">New York weather 30 days</a></div>
+        <script async src="https://app3.weatherwidget.org/js/?id=ww_2b82354b582ed"></script>
+        <div class="acciones-destino">
+            <button class="boton-accion"> Reservar vuelo</button>
+            <button class="boton-accion">Agregar a itinerario</button>
+        </div>
+    </section>
+    
+</body>
+</html>

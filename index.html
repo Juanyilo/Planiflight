@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planiflight</title>
+    <link rel="stylesheet" href="Styles/Principal.css">
+</head>
+<body class="body">
+    <header class="header">
+        <div class="sup">
+            <div class="menu">
+                <input type="checkbox" id="cambMenu">
+                <label for="cambMenu" class="btnAbrir">☰</label>
+                <img src="images/icons/LogoNN.png" alt="LOGO" class="logo" >
+                
+                <div class="sldMenu">
+                    <label for="cambMenu" class="btnCerrar">&times;</label>
+                    <a href="pages/menu/favoritos.html">Favoritos</a>
+                    <a href="pages/menu/itinerario.html">Itinerario</a>
+                    <a href="pages/menu/vuelos reservados.html">Reservas</a>
+                </div>
+            </div>
+            <h1 class="titulo">PLANIFLIGHT</h1>
+            <nav class="nav">
+                <div>
+                    <a href="#inicio">Inicio</a>
+                    <a href="#destinos">Destinos</a>
+                    <a href="#contacto">Contacto</a>
+                </div>
+                <div class="sesion">
+                    <a href="pages/Sesion/Registrarse.html">Registrarse</a>
+                    <a href="pages/Sesion/Acceder.html">Acceder</a>
+                </div>
+            </nav>
+        </div>
+        <hr>
+    </header>
+    <section class="inicio" id="inicio">
+        <div class="textos-inicio">
+            <h1 class="subtitulo">Planifica y vuela <span>sin complicaciones</span></h1>
+            <p>
+                La plataforma de reservas de vuelos que está diseñada para que 
+                viajar sea más fácil, rápido y seguro con una interfaz intuitiva, podrás elegir 
+                horarios convenientes y reservar tus tiquetes en cuestión de minutos.
+            </p>
+        </div>
+        <a href="pages/Destinos/Miami.html" class="imgDestacado">
+            <img src="images/destinos/Internacionales/Miami.avif" alt="Miami">
+            <div class="texto-encima">
+                <h3>Destino destacado</h3>
+                <p>Miami</p>
+            </div>
+        </a>
+    </section>
+    <section id="destinos" class="destinos">
+        <div class="textos-destinos">
+            <h2>Selecciona tu destino</h2>
+            <p>Vuelos frecuentes y promociones directas a 
+                los lugares más codiciados del mundo.</p>
+        </div>
+        <div class="nacionales">
+            <h3>Nacionales (Colombia)</h3>
+            <div class="buscador">
+                <input type="search" id="search-nacionales" placeholder="Destino" aria-label="Buscar destinos nacionales">
+                <button type="button" id="search-button-nacionales" aria-label="Buscar destinos nacionales">🔍</button>
+            </div>
+            <div class="img-destinos">
+                <a href="pages/Destinos/Acandí.html" class="img-des" >
+                    <img src="images/destinos/Nacionales/acandí.jpg" alt="Acandí">
+                    <p class="texto-destino">Acandí, Chocó</p>
+                </a>
+                <input type="checkbox" id="corazon-acandi" class="input-favorito">
+                <label for="corazon-acandi" class="boton-favorito">
+                    <img src="images/icons/Nfavs.png" alt="No favorito" class="img-corazon no-favorito">
+                    <img src="images/icons/favs.png" alt="Favorito" class="img-corazon favorito">
+                </label>
+            </div>
+        </div>
+        <div class="internacionales">
+            <h3>Internacionales</h3>
+            <div class="buscador">
+                <input type="search" id="search-internacionales" placeholder="Destino" aria-label="Buscar destinos internacionales">
+                <button type="button" id="search-button-internacionales" aria-label="Buscar destinos internacionales">🔍</button>
+            </div>
+            <div class="img-destinos">
+                <a href="pages/Destinos/Miami.html" class="img-des" >
+                    <img src="images/destinos/Internacionales/Miami.avif" alt="Miami">
+                    <p class="texto-destino">Miami, Estados Unidos</p>
+                </a>
+                <input type="checkbox" id="corazon-miami" class="input-favorito">
+                <label for="corazon-miami" class="boton-favorito">
+                    <img src="images/icons/Nfavs.png" alt="No favorito" class="img-corazon no-favorito">
+                    <img src="images/icons/favs.png" alt="Favorito" class="img-corazon favorito">
+                </label>
+            </div>
+        </div>
+    </section>
+    <footer class="footer" id="contacto">
+        <hr>
+        <h2>Contáctanos</h2>
+        <div class="cortel">
+            <article class="infoCont">
+                <h3>Correo electrónico</h3>
+                <hr>
+                <a href="mailto:planiflight@gmail.com">planiflight@gmail.com</a>
+            </article>
+            <article class="infoCont">
+                <h3>Teléfono</h3>
+                <hr>
+                <a href="tel:+573001234567">+57 300 22663558</a>
+            </article> 
+        </div>
+        <article class="infoCont">
+            <h3>Dirección</h3>
+            <hr>
+            <p>Calle 82 #14a - 22</p>
+        </article>
+    </footer>
+</body>
+</html>
